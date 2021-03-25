@@ -136,7 +136,7 @@ final class TermuxInstaller {
                             new AlertDialog.Builder(activity).setTitle(R.string.bootstrap_error_title).setMessage(R.string.bootstrap_error_body)
                                 .setNegativeButton(R.string.bootstrap_error_abort, (dialog, which) -> {
                                     dialog.dismiss();
-                                    activity.finish();
+                                    //activity.finish();
                                 }).setPositiveButton(R.string.bootstrap_error_try_again, (dialog, which) -> {
                                     dialog.dismiss();
                                     TermuxInstaller.setupIfNeeded(activity, whenDone);
