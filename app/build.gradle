@@ -141,9 +141,10 @@ task downloadBootstraps(){
         downloadBootstrap("aarch64", "1e3d80bd8cc8771715845ab4a1e67fc125d84c4deda3a1a435116fe4d1f86160", version)
     }
 }
-
+/*
 afterEvaluate {
   android.applicationVariants.all { variant ->
     variant.javaCompileProvider.get().dependsOn(downloadBootstraps)
   }
 }
+*/
